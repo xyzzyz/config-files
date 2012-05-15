@@ -24,6 +24,7 @@
 (require 'erc)
 (require 'erc-plugins)
 (require 'server)
+(require 'magit)
 ;(require 'predictive)
 
 

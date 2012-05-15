@@ -277,6 +277,11 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey,           }, "o", function () awful.screen.focus_relative(1) end   ),
 
+    awful.key({ modkey,           }, "e", function () awful.util.spawn_with_shell("saw >> /tmp/lol 2>&1") end   ),
+
+    awful.key({ modkey,           }, "q", function () awful.util.spawn_with_shell("xscreensaver-command -lock") end   ),
+
+
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),

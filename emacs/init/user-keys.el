@@ -25,6 +25,7 @@
 (global-set-key (kbd "C-f") 'backward-delete-char-untabify)
 (global-set-key (kbd "C-M-d") 'kill-sentence)
 
+(global-set-key (kbd "M-g") 'goto-line)
 
 (global-set-key (kbd "C-x w") 'slime-goto-repl-buffer)
 
@@ -38,6 +39,7 @@
 (global-set-key (kbd "C-<tab>") 'completion-at-point)
 
 (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+(define-key c-mode-base-map (kbd "C-c SPC") 'semantic-complete-analyze-inline)
 
 (define-key lisp-mode-map (kbd "TAB") 'slime-indent-and-complete-symbol)
 

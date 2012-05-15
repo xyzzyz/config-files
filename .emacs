@@ -12,6 +12,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(LaTeX-section-hook (quote (LaTeX-section-heading LaTeX-section-title LaTeX-section-section)))
+ '(TeX-PDF-mode t)
  '(global-semantic-idle-breadcrumbs-mode t nil (semantic/idle))
  '(global-semantic-idle-completions-mode t nil (semantic/idle))
  '(global-semantic-idle-scheduler-mode t)
@@ -39,6 +41,7 @@
  '(semantic-idle-summary-function (quote semantic-format-tag-prototype))
  '(semantic-mode t)
  '(semanticdb-project-roots nil)
+ '(show-trailing-whitespace t)
  '(vm-summary-show-threads t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
