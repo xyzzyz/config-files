@@ -25,9 +25,9 @@ do
         if in_error then return end
         in_error = true
 
-        naughty.notify({ preset = naughty.config.presets.critical,
-                         title = "Oops, an error happened!",
-                         text = err })
+--        naughty.notify({ preset = naughty.config.presets.critical,
+--                         title = "Oops, an error happened!",
+--                         text = err })
         in_error = false
     end)
 end
@@ -99,14 +99,15 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 uptimewidget = widget({ type = "textbox" })
 vicious.register(uptimewidget, vicious.widgets.uptime, "$1d $2h $3m")
 
-gmailwidget = widget({ type = "textbox" })
-vicious.register(gmailwidget, vicious.widgets.gmail,
-                 function (widget, args)
-                    if args["{count}"] > 0 
-                    then return string.format("Gmail: %d: %s", args["{count}"], args["{subject}"])
-                    else return ""
-                    end
-                 end, 60)
+--gmailwidget = widget({ type = "textbox" })
+--vicious.register(gmailwidget, vicious.widgets.gmail,
+--                 function (widget, args)
+--                    if args["{count}"] > 0 
+--                    then return string.format("Gmail: %d: %s", 
+--args["{count}"], args["{subject}"])
+--                    else return ""
+--                    end
+--                 end, 60)
 
 
 -- Initialize widget

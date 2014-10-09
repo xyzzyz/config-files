@@ -1,3 +1,7 @@
+(defun polak-biedak ()
+  (interactive)
+  (play-sound-file "~/tmp/polak-biedak.wav"))
+
 (defun compile-on-save-start ()
   (let ((buffer (compilation-find-buffer)))
     (unless (get-buffer-process buffer) 

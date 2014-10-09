@@ -1,9 +1,3 @@
-;(require 'package)
-;(package-initialize)
-
-;; (add-to-list 'load-path "~/programowanie/biblioteki/clbuild/source/slime/")
-;; (add-to-list 'load-path "~/programowanie/biblioteki/clbuild/source/slime/contrib")
-
 (add-to-list 'load-path "~/emacs/lib/slime")
 (add-to-list 'load-path "~/emacs/lib/slime/contrib")
 (require 'slime)
@@ -27,6 +21,11 @@
 (require 'magit)
 ;(require 'predictive)
 
+
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 (provide 'load-libraries)
 
