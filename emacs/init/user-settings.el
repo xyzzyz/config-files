@@ -12,16 +12,6 @@
 					;(add-to-list 'package-archives '("technomancy" . "http://repo.technomancy.us/emacs/") t)
 
 
-
-(global-ede-mode 1)                      ; Enable the Project management system
-
-					;(semantic-add-system-include "/usr/lib64/gcc/x86_64-pc-linux-gnu/4.4.5/include/g++-v4/" 'c++-mode)
-
-(defun my-c-mode-cedet-hook ()
-  (local-set-key "." 'semantic-complete-self-insert)
-  (local-set-key ">" 'semantic-complete-self-insert))
-(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)

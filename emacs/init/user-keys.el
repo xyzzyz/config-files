@@ -43,6 +43,7 @@
 
 (define-key lisp-mode-map (kbd "TAB") 'slime-indent-and-complete-symbol)
 
+(define-key compilation-mode-map (kbd "C-o") 'other-window)
 
 (global-unset-key (kbd "C-t")) ;; don't like transpose-chars
 

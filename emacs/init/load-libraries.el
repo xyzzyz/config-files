@@ -1,31 +1,14 @@
-(add-to-list 'load-path "~/emacs/lib/slime")
-(add-to-list 'load-path "~/emacs/lib/slime/contrib")
-(require 'slime)
-(slime-setup '(slime-repl slime-fuzzy))
-(slime-require :swank-listener-hooks)
-
- 
-
-;(load-library "swank-clojure")
-
-(add-to-list 'load-path "~/emacs/lib/cedet/common/")
-
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 (require 'cc-mode)
 (require 'paren)
 (require 'highlight-parentheses)
 (require 'browse-kill-ring)
-(require 'erc)
-(require 'erc-plugins)
 (require 'server)
 (require 'magit)
-;(require 'predictive)
-
-
-(require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
 
 (provide 'load-libraries)
 
