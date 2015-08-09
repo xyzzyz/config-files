@@ -5,10 +5,10 @@
 
 (require 'cc-mode)
 (require 'paren)
-(require 'highlight-parentheses)
 (require 'browse-kill-ring)
 (require 'server)
 (require 'magit)
+(require 'compile)
 
 (provide 'load-libraries)
 
